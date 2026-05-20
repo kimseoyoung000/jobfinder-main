@@ -272,71 +272,7 @@
     </div>
   </section>
 
-  <!-- 우측 플로팅 사이드바 -->
-  <aside class="jp-floating-sidebar">
-    <div class="jp-floating-sidebar__inner">
-
-      <div class="jp-floating-side-card jp-floating-side-card--event">
-        <div class="jp-side-eyebrow">
-          <i class="fa-solid fa-sparkles"></i>
-          SPECIAL EVENT
-        </div>
-
-        <div class="jp-side-title">
-          이력서 완성하고<br/>
-          합격 예측 리포트 받기
-        </div>
-
-        <div class="jp-side-desc">
-          단 5분만 투자하면 내 이력서를 기준으로 한 맞춤 분석 리포트를 무료로 확인할 수 있어요.
-        </div>
-
-        <div class="jp-side-highlight">
-          <div class="jp-side-highlight__icon">
-            <i class="fa-regular fa-file-lines"></i>
-          </div>
-          <div class="jp-side-highlight__text">
-            대표 이력서를 등록하면 더 정교한 추천 공고와 분석 정보를 받을 수 있어요.
-          </div>
-        </div>
-
-        <button class="jp-side-btn jp-side-btn--primary" type="button">
-          이력서 완성하기
-        </button>
-
-        <div class="jp-side-mini">
-          지금 시작하면 추천 정확도도 함께 높아짐
-        </div>
-      </div>
-
-      <div class="jp-floating-side-card" sec:authorize="isAnonymous()">
-        <div class="jp-side-eyebrow">
-          <i class="fa-regular fa-user"></i>
-          START NOW
-        </div>
-
-        <div class="jp-side-title">
-          잡파인더에서<br/>
-          새로운 커리어 시작하기
-        </div>
-
-        <div class="jp-side-desc">
-          회원가입 후 관심 직무와 이력서를 등록하면 나에게 더 잘 맞는 공고를 빠르게 확인할 수 있어요.
-        </div>
-
-        <div class="jp-side-btn-group">
-          <a class="jp-side-btn jp-side-btn--primary" th:href="@{/member/join}">
-            개인 회원가입
-          </a>
-          <a class="jp-side-btn jp-side-btn--secondary" th:href="@{/company/service}">
-            기업 서비스 시작
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </aside>
-
+  
   <!-- 기업 스폰서 배너 -->
   <section class="jp-sponsored-wrap"
            th:if="${mainBannerList != null and !#lists.isEmpty(mainBannerList)}">
